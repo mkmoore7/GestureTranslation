@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EMG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9e-cg-FHA">
-                                <rect key="frame" x="20" y="289" width="335" height="118"/>
+                                <rect key="frame" x="20" y="251" width="335" height="118"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,7 +49,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="disconnected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIQ-su-pqZ">
-                                <rect key="frame" x="20" y="435" width="341" height="49"/>
+                                <rect key="frame" x="6" y="442" width="341" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-J0-42Q">
+                                <rect key="frame" x="125" y="396" width="102" height="31"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xo-po-JXq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Myos Connected: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpU-OX-Rca">
+                                <rect key="frame" x="25" y="510" width="265" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,6 +75,7 @@
                         <outlet property="accel" destination="gdj-0G-Ghu" id="vii-bS-NOD"/>
                         <outlet property="emgLabel" destination="W9e-cg-FHA" id="jzk-0m-eif"/>
                         <outlet property="gyro" destination="E0S-fc-wMn" id="gyy-YR-FWS"/>
+                        <outlet property="numMyoLabel" destination="xpU-OX-Rca" id="RWW-ic-YIB"/>
                         <outlet property="orient" destination="ioO-S5-XvB" id="rPY-w1-DYO"/>
                         <outlet property="status" destination="VIQ-su-pqZ" id="QrJ-Wy-vS9"/>
                     </connections>
